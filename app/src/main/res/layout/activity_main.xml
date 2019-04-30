@@ -11,17 +11,24 @@
         android:id="@+id/bt_load_products"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Load products"
+        android:text="Products"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bt_test"
+        android:id="@+id/bt_load_subs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test"
+        android:text="Subscriptions"
         app:layout_constraintLeft_toRightOf="@+id/bt_load_products"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/bt_retrieve_purchases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchases"
+        app:layout_constraintLeft_toRightOf="@+id/bt_load_subs"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <android.support.v7.widget.RecyclerView
